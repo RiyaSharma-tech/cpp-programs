@@ -1,0 +1,46 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"**********SIMPLE CALCULATOR**********\n";
+    int num1,num2,res;
+    char oper,ch='Y';
+    while(ch=='Y' || ch=='y')
+    {
+        cout<<"Enter number 1: ";
+        cin>>num1;
+        cout<<"Enter the operator(+,-,*,/): ";
+        cin>>oper;
+        cout<<"Enter number 2: ";
+        cin>>num2;
+        switch (oper)
+        {
+        case '+':
+            res=num1+num2;
+            cout<<num1<<" + "<<num2<<" = "<<res;
+            break;
+        case '-':
+            res=num1-num2;
+            cout<<num1<<" - "<<num2<<" = "<<res;
+            break;
+        case '*':
+            res=num1*num2;
+            cout<<num1<<" * "<<num2<<" = "<<res;
+            break;
+        case '/':
+            res=num1/num2;
+            cout<<num1<<" / "<<num2<<" = "<<res;
+            break;
+        default:
+            cout<<"Operator is not supported!!!\n Enter valid operator(+,-,*,/)";
+            break;
+        }
+        cout<<"\nDo you want to continue.\n Press Y for yes and N for no.\n Enter your choice: ";
+        cin>>ch;
+        if(ch=='n'||ch=='N')
+        {
+            cout<<"THANK YOU FOR USING CALCULATOR";
+        }
+    }
+    return 0;
+}
