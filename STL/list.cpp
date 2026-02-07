@@ -1,7 +1,8 @@
 #include<iostream>
 #include<list>
 #include<iterator>
-
+//It is a sequential container
+//Internally implemented as doubly linked list
 using namespace std;
 
 int main()
