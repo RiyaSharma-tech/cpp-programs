@@ -1,5 +1,6 @@
 #include<iostream>
 #include<deque>
+//PUSH,POP,TOP FUNCTIONS HAVE O(1) COMPLEXITY
 
 using namespace std;
 
